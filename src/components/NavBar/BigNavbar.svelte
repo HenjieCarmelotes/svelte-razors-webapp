@@ -10,11 +10,11 @@
     <div class = "nav-container">
         <div class="nav-center">
             <!-- nav-links -->
-            {#each links as navlink}
                 <ul class="nav-links">
+                    {#each links as navlink}
                     <li> <a href={navlink.url} use:link> {navlink.text}</a></li>
+                    {/each}
                 </ul>
-            {/each}
             <!-- nav logo -->
             <a href="/" use:link class="nav-logo big-logo">
             <img src="/assets/images/logo.svg" class="logo" alt="razors logo">
